@@ -1,3 +1,7 @@
+
+I have not gotten very much of these homework assignments completed.  I looked at all of them, attempted many of them but I realized I was completely lost so I jumped into some Treehouse tutorials. I needed to do so that I would be able to understand the differences between arrays and objects in particular. Outside of Nathan and Calvin, I worked on this alone and I didnt get very far.  I will continue working on this.  Jared
+
+
 /**
  * PART 1
  *
@@ -12,6 +16,8 @@ var sum = function(a, b) {
 }
 
 console.log(sum(8, 11));
+
+"19 (8 + 11)"
 
 /**
  * PART 2
@@ -43,6 +49,7 @@ var getAverageTime = function(person) {
 
 console.log(getAverageTime(matt));
 console.log(getAverageTime(mark));
+
 
 
 /**

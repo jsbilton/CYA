@@ -29,6 +29,9 @@ function doSomethingCool() {
 
 // Put your answer below -------------------------
 
+var doSomethingCool = function(){
+  console.log("Something Cool!");
+};
 
 // -----------------------------------------------
 
@@ -49,6 +52,11 @@ setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
 
+// var sayFunc = function () {
+//   alert("say");
+// }
+
+setTimeout(function(){ alert("say")},2000)
 
 // -----------------------------------------------
 
@@ -72,14 +80,14 @@ var letter = "x";
 setTimeout(function(){
   letter = "y";
   console.log("The letter is", letter);
-}, 1);
+}, 0);
 
 letter = "z";
 console.log("The letter is", letter);
 
 // Put your answer below -------------------------
 
-
+goes to z and then y
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -100,7 +108,10 @@ var reverseStr = function(str) {
 };
 
 // Put your answer below -------------------------
-
+function reverseStr(arr) {
+  // split
+  return arr.split("").reverse().join("");
+}
 
 // -----------------------------------------------
 
@@ -134,7 +145,19 @@ var spanishColor = function(colorName) {
 };
 
 // Put your answer below -------------------------
+var spanishColor = function(colorName) {
 
+  var objectName = {
+    rojo: '#ff0000',
+    blanco: '#ffffff',
+    azul: '#0000ff',
+    verde: '#00ff00',
+    negro: '#000000'
+  }
+
+  return objectName[colorName];
+
+};
 
 // -----------------------------------------------
 
@@ -152,6 +175,10 @@ var foo = "bar";
 
 // Put your answer below -------------------------
 
+
+var foo = function() {
+    console.log("bar");
+};
 
 // -----------------------------------------------
 
@@ -176,6 +203,8 @@ var callTenTimes = function(callback) {
 // Put your answer below -------------------------
 
 
+var callNTimes = [0,1,2,3,4,5,6,7,8,9];
+callNTimes.forEach(function);
 
 // -----------------------------------------------
 
@@ -310,6 +339,15 @@ function max(){
     //...
 }
 
+
+function max (numberOne, numberTwo) {
+  if( numberOne === 20){
+    return numberOne;
+  } else {
+    return numberTwo;
+  }
+}
+alert(max(10));
 // ---------------------
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
 // ---------------------
